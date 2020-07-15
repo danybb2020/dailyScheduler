@@ -12,7 +12,11 @@ localStorage.setItem(time,value);
 ///need to tell what time it is 
 ///change the day / check acitivties on changing classses with jquery on google
 
+var currentHour=moment().hours()
+console.log(currentHour)
 
+
+$("#timeHour").text(moment().format("MMMM, Do, YYYY"));
 $("#9 .description").val(localStorage.getItem("9"));
 $("#10 .description").val(localStorage.getItem("10"));
 $("#11 .description").val(localStorage.getItem("11"));
